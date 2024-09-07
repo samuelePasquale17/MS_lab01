@@ -1,0 +1,38 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ALU
+Version: S-2021.06-SP4
+Date   : Tue Mar 26 23:38:25 2024
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: FUNC[0] (input port)
+  Endpoint: OUTALU[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  FUNC[0] (in)                             0.00       0.00 f
+  U11/ZN (NOR2_X1)                         0.03       0.03 r
+  U10/ZN (AND3_X1)                         0.06       0.09 r
+  U7/ZN (AND2_X1)                          0.04       0.13 r
+  OUTALU[3] (out)                          0.00       0.13 r
+  data arrival time                                   0.13
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

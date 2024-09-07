@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ALU
+Version: S-2021.06-SP4
+Date   : Tue Mar 26 23:30:42 2024
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: FUNC[2] (input port)
+  Endpoint: OUTALU[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  FUNC[2] (in)                             0.00       0.00 r
+  U20/ZN (INV_X1)                          0.02       0.02 f
+  U19/ZN (OR4_X1)                          0.12       0.14 f
+  U12/ZN (NOR2_X1)                         0.04       0.18 r
+  OUTALU[3] (out)                          0.00       0.19 r
+  data arrival time                                   0.19
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
